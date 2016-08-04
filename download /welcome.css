@@ -1,0 +1,195 @@
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        font-family: 'Hiragino Sans GB W3', 'leelawadee ui bold'!important;
+        font-family: 'arial'!important;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        /* Firefox */
+        -webkit-box-sizing: border-box;
+        /* Safari */
+        bottom: 0px;
+    }
+    .welcome-box {
+        background: url(images/welcome_bg.png) no-repeat center;
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .welcome-box .welcome-cotent {
+        max-height: 328px;
+        height: 328px;
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -164px;
+        margin-left: -20%;
+    }
+    .welcome-cotent .welcome-name {
+        width: 56%;
+        text-align: center;
+        float: left;
+        padding-top: 5%;
+    }
+    .welcome-name .welcome-name-up {
+        font-size: 3.7em;
+        font-weight: bold;
+        width: 100%;
+        min-height: 60px;
+        color: #0084ff;
+    }
+    .welcome-name .welcome-name-down {
+        font-size: 1.6em;
+        color: #333;
+    }
+    .welcome-cotent .welcome-qrcode {
+        width: 44%;
+        float: left;
+    }
+    /***100%**/
+    
+    .welcome-qrcode-img {
+        width: 75%;
+        margin-top: -15%;
+    }
+    .welcome-qrcode .phone {
+        margin-top: 15px;
+        padding: 0 5%;
+        width: 100%;
+    }
+    .phone-ios {
+        background: url(images/IOS.png) no-repeat left center;
+    }
+    .phone-andr {
+        background: url(images/Android.png) no-repeat left center;
+    }
+    .welcome-qrcode .phone span {
+        height: 30px;
+        line-height: 35px;
+        font-size: 25px;
+        display: inline-block;
+        padding-left: 30px;
+        color: #999;
+    }
+    .phone-ios {
+        margin-right: 10px;
+    }
+    .welcome-qrcode .phone img {
+        width: 65%;
+    }
+    .welcome-button {
+        display: none;
+    }
+    @media (min-width:1000px) and (max-width: 1400px) {
+        .welcome-qrcode-img {
+            margin-left: 30%;
+            width: 100%;
+        }
+        .welcome-qrcode .phone img {
+            width: 90%;
+            margin-left: 30%;
+        }
+    }
+    @media (min-width:700px) and (max-width: 1000px) {
+        .welcome-qrcode-img {
+            margin-left: 50%;
+            width: 100%;
+        }
+        .welcome-qrcode .phone img {
+            width: 90%;
+            margin-left: 50%;
+        }
+    }
+    @media screen and (max-width:700px) {
+        .welcome-qrcode-img {
+            width: 75% !important;
+            margin: 0 auto;
+        }
+        .welcome-box {
+            min-width: 100%;
+            background-size: cover;
+        }
+        .welcome-box .welcome-cotent {
+            height: auto;
+            max-height: none;
+            position: static;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .welcome-cotent .welcome-name,
+        .welcome-cotent .welcome-qrcode {
+            width: 100%;
+            float: none;
+            max-height: 100%;
+        }
+        .welcome-cotent .welcome-qrcode {
+            width: 45%;
+            margin: 45px auto;
+            min-width: 200px;
+        }
+        .welcome-qrcode .phone img {
+            width: 65%;
+            margin-left: 12%;
+        }
+        .welcome-button {
+            display: block;
+            margin-bottom: 60px;
+        }
+        .welcome-button .button-ios,
+        .welcome-button .button-andr {
+            width: 100%;
+            text-align: center;
+        }
+        .welcome-button a {
+            width: 76%;
+            height: 58px;
+            line-height: 58px;
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .welcome-button a:hover {
+            text-decoration: none;
+        }
+        .button-ios {
+            margin-bottom: 15px;
+        }
+        .button-ios a {
+            background: #2b77c1;
+        }
+        .button-andr a {
+            background: #02265c;
+        }
+        .welcome-button p {
+            color: #999;
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:350px) {
+        .welcome-qrcode-img {
+            width: 65% !important;
+            margin: -13px auto;
+        }
+        .welcome-button a {
+            height: 41px!important;
+            line-height: 41px!important;
+            font-size: 18px!important;
+        }
+        .welcome-qrcode .phone {
+            margin-top: 11%;
+        }
+        .welcome-qrcode .phone img {
+            width: 65%;
+            margin-left: 12%;
+        }
+    }
